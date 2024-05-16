@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "hii_backend": {
+      "main": "src/hii_backend/main.mo",
+      "type": "motoko"
+    },
+    "hii_frontend": {
+      "dependencies": [
+        "hii_backend"
+      ],
+      "source": [
+        "src/hii_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "hii_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
